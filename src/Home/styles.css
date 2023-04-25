@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Minha Fonte';
+    src: url('../Font/fonte_pixel.ttf');
+  }
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.content-home {
+    color: white;
+    display:block;
+    text-align: center;
+    
+  }
+  
+.titulo {
+    font-family: 'Minha Fonte', sans-serif; /* define a fonte personalizada */
+    font-size: 48px; /* define o tamanho da fonte */
+    color: white; /* define a cor do texto */
+    text-align: center; /* centraliza o texto na horizontal */
+    margin-top: 100px;
+  }
+
+.btnStart{
+
+    background-color: #5E308C;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Minha Fonte', sans-serif;
+    box-shadow: none;
+    border-style: none;
+
+}
+
+.btnStart:active{
+    background-color: #311E59;
+}
