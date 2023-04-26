@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './Home';
 import Enigma from './Enigma'
+import Questions from './questions';
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -14,6 +15,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/enigma" element={<Enigma />} exact />
+          <Route path="/questions" element={<Questions />} exact />
         </Routes>
       </BrowserRouter>
   </React.StrictMode>

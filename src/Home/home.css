@@ -1,12 +1,25 @@
 @font-face {
     font-family: 'Minha Fonte';
     src: url('../Font/fonte_pixel.ttf');
+    
+  }
+
+  @font-face {
+    font-family: 'FonteLegal';
+    src: url('../Font/arcade.ttf');
+  }
+
+  @font-face {
+    font-family: 'bttf';
+    src: url('../Font/La\ Machine\ Company.ttf');
   }
 
 body {
     background-color: black;
     margin: 0;
 }
+
+
 
 .content-home {
     color: white;
@@ -15,8 +28,8 @@ body {
     
   }
   
-.titulo {
-    font-family: 'Minha Fonte', sans-serif; /* define a fonte personalizada */
+.tituloHome {
+    font-family: 'bttf', sans-serif; /* define a fonte personalizada */
     font-size: 48px; /* define o tamanho da fonte */
     color: white; /* define a cor do texto */
     text-align: center; /* centraliza o texto na horizontal */
