@@ -56,3 +56,7 @@ body {
 .btnStart:active{
     background-color: #311E59;
 }
+
+.btnStart:hover{
+  background-color: #311E59;
+}

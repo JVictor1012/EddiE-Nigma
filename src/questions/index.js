@@ -83,7 +83,10 @@ function Questions() {
           <h3>{revealedString}</h3>
         </div>
       ) : (
-        <p>Aqui vai seu prêmio campeão</p>
+        <div>
+          <h3>{revealedString}</h3>
+          <button className='botoes' onClick={handlePreviousQuestion}>Pergunta Anterior</button>
+        </div>
       
         
       )}
