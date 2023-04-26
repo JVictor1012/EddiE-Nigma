@@ -51,6 +51,7 @@ body {
     color: white;
     text-align: center; 
     margin-top: 100px;
+    font-weight: lighter;
   }
 
   .questionsBox{
@@ -78,3 +79,7 @@ body {
   .botoes:active{
     background-color: #311E59;
 }
+
+  .botoes:hover{
+    background-color: #311E59;
+  }

@@ -7,7 +7,7 @@ function Home() {
   return (
     <body>
         <div className="content-home">
-            <h1 className="tituloHome">T u t u  and  J o n n y  ' s  G i f t</h1>
+            <h1 className="tituloHome">T u t u   and  J o n n y ' s   G i f t</h1>
             <Link to="/enigma">
                 <button className="btnStart">= Start =</button>
             </Link>

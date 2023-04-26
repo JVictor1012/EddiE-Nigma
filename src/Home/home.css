@@ -29,11 +29,12 @@ body {
   }
   
 .tituloHome {
-    font-family: 'bttf', sans-serif; /* define a fonte personalizada */
-    font-size: 48px; /* define o tamanho da fonte */
-    color: white; /* define a cor do texto */
-    text-align: center; /* centraliza o texto na horizontal */
+    font-family: 'bttf'; 
+    font-size: 48px; 
+    color: white;
+    text-align: center; 
     margin-top: 100px;
+    font-weight: lighter;
   }
 
 .btnStart{
@@ -48,6 +49,7 @@ body {
     font-family: 'Minha Fonte', sans-serif;
     box-shadow: none;
     border-style: none;
+    font-weight: lighter;
 
 }
 

@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
 import './styles.css';
 
+
 function Questions() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
 
+  const [revealedChars, setRevealedChars] = useState(10);
+  const originalString = 'B95HH-IKI4N-ZI5FE';
+  const revealedString = originalString.substring(0, revealedChars);
+
+
+
+
   const questions = [
     {
       question: 'No início de tudo, quantas pessoas estavam no grupo Pit Manos quando ele foi criado?',
-      answer: '5'
+      answer: '5 pessoas (Arthur, Eduardo, Manoel, Davi e Nathan)'
     },
     {
       question: 'Atualmente, qual versão do grupo Pit Manos que estamos?',
@@ -38,12 +46,17 @@ function Questions() {
   ];
 
 
+
+
   function handleNextQuestion() {
     setCurrentQuestionIndex(currentQuestionIndex + 1);
     setShowAnswer(false);
   }
 
   function handlePreviousQuestion() {
+    if (currentQuestionIndex ===0){
+      return;
+    }
     setCurrentQuestionIndex(currentQuestionIndex -1);
     setShowAnswer(false);
   }
@@ -52,19 +65,26 @@ function Questions() {
     setShowAnswer(true);
   }
 
-  return (
-    <div className='questionsBox'>
-      {currentQuestionIndex < questions.length ? (
-        <div>
-          <h2 className='pergunta'>{questions[currentQuestionIndex].question}</h2>
-          <button className='botoes' onClick={handlePreviousQuestion}>Pergunta Anterior</button>
-          <button className='botoes' onClick={revealAnswer}>Resposta</button>
-          {showAnswer && <p>{questions[currentQuestionIndex].answer}</p>}
-          <button className='botoes' onClick={handleNextQuestion}>Próxima pergunta</button>
+  function revealNextChar() {
+    setRevealedChars(revealedChars + 1);
+  }
 
+  return (
+    <div >
+      {currentQuestionIndex < questions.length ? (
+        <div className='questionsBox'>
+          <h2 className='pergunta'>{questions[currentQuestionIndex].question}</h2>
+          <div className="ButtonsContainer">
+            <button className='botoes' onClick={handlePreviousQuestion}>Pergunta Anterior</button>
+            <button className='botoes' onClick={() => {revealAnswer(); revealNextChar();}} >Resposta</button>
+            <button className='botoes' onClick={handleNextQuestion}>Próxima pergunta</button>
+          </div>
+          <p className='resposta'> {showAnswer ? questions[currentQuestionIndex].answer : "?"}</p>
+          <h3>{revealedString}</h3>
         </div>
       ) : (
         <p>Aqui vai seu prêmio campeão</p>
+      
         
       )}
     </div>

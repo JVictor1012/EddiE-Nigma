@@ -1,13 +1,45 @@
-h2{
-    color: aliceblue;
+.questionsBox {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
-.Resposta{
+h3{
+  color: white;
+  font-family: 'FonteLegal' ;
+}
+
+.ButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.botoes {
+  padding: 10px;
+  margin: 10px;
+  margin: 0 5px;
+}
+
+
+
+h2{
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+.resposta{
     margin: 0 auto;
     margin-top: 20px;
-    color: black;
+    color: white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 30px;
+    margin-top: 20px;
     cursor: pointer;
     font-family: 'Minha Fonte', sans-serif;
     border-style: none;
@@ -15,10 +47,6 @@ h2{
 
 }
 
-@font-face {
-    font-family: 'Minha Fonte';
-    src: url('../Font/fonte_pixel.ttf');
-  }
 
 body {
     background-color: black;
@@ -67,7 +95,7 @@ body {
     font-size: 32px; 
     color: white;
     text-align: center; 
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   p{
