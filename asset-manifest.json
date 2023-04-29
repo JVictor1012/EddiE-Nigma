@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/EddiE-Nigma/static/css/main.d3f00320.css",
-    "main.js": "/EddiE-Nigma/static/js/main.cf6ab942.js",
+    "main.js": "/EddiE-Nigma/static/js/main.411b41e1.js",
     "static/media/La Machine Company.ttf": "/EddiE-Nigma/static/media/La Machine Company.3b082eb4077a837f00c0.ttf",
     "static/media/arcade.ttf": "/EddiE-Nigma/static/media/arcade.5df8cd545dcd2db2bf8b.ttf",
     "static/media/fonte_pixel.ttf": "/EddiE-Nigma/static/media/fonte_pixel.e3d365ba5fa6a65e9caf.ttf",
     "index.html": "/EddiE-Nigma/index.html",
     "main.d3f00320.css.map": "/EddiE-Nigma/static/css/main.d3f00320.css.map",
-    "main.cf6ab942.js.map": "/EddiE-Nigma/static/js/main.cf6ab942.js.map"
+    "main.411b41e1.js.map": "/EddiE-Nigma/static/js/main.411b41e1.js.map"
   },
   "entrypoints": [
     "static/css/main.d3f00320.css",
-    "static/js/main.cf6ab942.js"
+    "static/js/main.411b41e1.js"
   ]
 }
