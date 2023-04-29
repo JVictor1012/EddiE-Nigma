@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>  
-      <BrowserRouter>
+      <BrowserRouter basename="/EddiE-Nigma">
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/enigma" element={<Enigma />} exact />
